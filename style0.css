@@ -3,6 +3,13 @@ body{
   background-color: green;
 }
 
-img {
+ol {
+    border: 1px solid black;
+}
 
+img {
+  max-height: 125px;
+  -webkit-animation-duration: infinite;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
 }
