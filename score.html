@@ -3,26 +3,50 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
     <title>Phase 10 card game</title>
     <h1> UNoFFICAL PHASE 10<h1>
   </head>
   <body>
+<script>
+</script>
+
     <nav> <ul>
     <li><a href="about_me.html">About Me</a></li>
     <li><a href="how_to.html">How to Play Phase 10 </a></li>
     <li><a href="index.html">Home Page</a></li>
   </ul> </nav>
 
+<button id = "addName"> Lets Play </button>
+
+<p id= "name"> name</p>
+<p id = "score">score</p>
+
   <section id = "input">
-    <form class="name" action="index.html" method="post">
-
-    </form>
+  <button id = "target" type= "button"> ADD IT </button>
+  <div id ="output">10</div>
   </section>
-
+<div id="counter"></div>
   <section id = "total">
 input name of total and keeps score.
   </section>
+<div class="demo-container">
 
 <footer>Copyright &copy;  Webmaster Tiger H </footer>
+
+
+<script>
+$ (function (){
+
+$('#addName').click(function () {
+    var name1 = prompt(' Hello What is your Name ?')
+    $("#name").html(name1);
+  });
+
+
+
+}); //ending tag for all the functions//
+
+</script>
   </body>
 </html>
